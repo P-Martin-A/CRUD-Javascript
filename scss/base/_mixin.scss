@@ -1,0 +1,30 @@
+@mixin input{
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: 1px solid #dfdfdf;
+
+    &:invalid{
+        background: rgba(255, 0, 0, 0.1);
+    }
+
+    &:valid{
+        background: rgba(0, 255, 0, 0.1);
+    }
+
+}
+
+@mixin card($color){
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: .3rem;
+    color: $color;
+
+    ion-icon{
+        font-size: 2rem;
+    }
+
+    h2{
+        margin-left: .5rem;
+    }
+}

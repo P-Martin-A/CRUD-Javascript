@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Object Products</title>
+</head>
+<body>
+    
+    <header><!-- Header -->
+        <!-- Title -->
+        <h1>Hello, fill in the information, please</h1>
+    </header><!-- End Header -->
+
+    <section><!-- Section -->
+        <form id="form" class="flex">
+            <!-- Seller Name -->
+            <label for="nameSeller" class="inputTitle">Seller Name</label>
+            <br>
+            <input id="seller" class="inputS" type="text" name="nameSeller" required>
+            <br>
+
+            <!-- Product Name -->
+            <label for="nameProduct" class="inputTitle">Product Name</label>
+            <br>
+            <input id="productN" class="inputP" type="text" name="nameProduct" required>
+            <br>
+
+            <!-- Product Value -->
+            <label for="valueProduct" class="inputTitle">Product Value</label>
+            <br>
+            <input id="productV" class="inputV" type="number" name="valueProduct" required>
+            <br>
+
+            <!-- Loader Button -->
+            <button type="submit" class="btn">Cargar</button>
+        </form>
+    </section><!-- End Section -->
+
+    <article>
+        <div class="cards" id="cards">
+
+        </div>
+    </article>
+
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

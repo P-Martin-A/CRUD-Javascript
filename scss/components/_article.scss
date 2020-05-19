@@ -1,0 +1,38 @@
+article{
+    height: 25rem;
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+
+        .card{
+            padding: 1rem;
+            margin: .5rem;
+            border: 1px solid #c2c2c2;
+            border-radius: .5rem;
+            text-align: center;
+            width: 18rem;
+
+            .seller{
+                @include card($colorCardPrimary);
+            }
+
+            .productN{
+                @include card($colorCardSecundary);
+            }
+
+            .productV{
+                @include card($colorCardThird);
+            }
+
+            .action{
+                
+                ion-icon{
+                    cursor: pointer;
+                    margin: .3rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
